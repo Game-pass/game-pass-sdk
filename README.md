@@ -135,4 +135,4 @@ For more examples, check out the examples directory in the GitHub repository.
 Contributing
 We welcome contributions! Please see our Contributing Guide for more details.
 License
-GamePassSDK is released under the MIT License.
+GamePassSDK is released under the MIT License.  
