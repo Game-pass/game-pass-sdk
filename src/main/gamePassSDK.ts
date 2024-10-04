@@ -37,7 +37,7 @@ export class GamePassSDK {
   constructor(keypair: Keypair) {
     this.provider = getProvider(keypair);
     this.GameOwnerkeypair=keypair
-    this.gamePassAccount = new PublicKey('3UTWCtNK5z4a66rNtVwVfEoT6966uajrpURBSZ41mypB');
+    this.gamePassAccount = new PublicKey('4KFekCRFRM4GcpnbobfA88Zr1CLYBsVGghNWzQq8B3Qf');
     this.program = new anchor.Program(IDL as Idl, programId, this.provider);
   }
 
@@ -186,10 +186,10 @@ export class GamePassSDK {
       ).signers([Keypair])
       .rpc(); 
 
+
       return {
         transactionSignature: tx
       };
-      console.log('Transaction successful:', tx);
     } catch (error) {
       if (error instanceof Error) {
         console.error('Error intializeGamePass main account:', error.message);
