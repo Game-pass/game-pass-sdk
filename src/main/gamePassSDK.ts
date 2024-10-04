@@ -18,7 +18,7 @@ import { GamePass, GameAccts, UserGameAccount,
   Tier ,
   UpdateBadgeProgressResult,
   UserGameAccount3} from '../utils/interfaces.js'; // Import the interfaces
-const myProgramId="JBJoGmeBtQ8NNhz4QqH1c1onikK4MERB5Sz3mvHwokmP"
+const myProgramId="Bs6wAQAyxVgj9mDFKo8ZBVxdbC8qugQ3FgWSqnBCS858"
 import IDL  from "../utils/idl.json"  assert { type: 'json' };
 import BN from 'bn.js';
 
@@ -37,7 +37,7 @@ export class GamePassSDK {
   constructor(keypair: Keypair) {
     this.provider = getProvider(keypair);
     this.GameOwnerkeypair=keypair
-    this.gamePassAccount = new PublicKey('HxXJeZzHM8hyimqqzoho7bpYoXzPd6sPoqBSfsFUQ93e');
+    this.gamePassAccount = new PublicKey('3UTWCtNK5z4a66rNtVwVfEoT6966uajrpURBSZ41mypB');
     this.program = new anchor.Program(IDL as Idl, programId, this.provider);
   }
 
