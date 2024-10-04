@@ -11,7 +11,7 @@ import * as anchor from '@project-serum/anchor';
 import { getProvider } from '../utils/provider.js';
 import { findProgramAddressSync } from '@project-serum/anchor/dist/cjs/utils/pubkey.js';
 import { SystemProgram, PublicKey, Transaction } from '@solana/web3.js';
-const myProgramId = "JBJoGmeBtQ8NNhz4QqH1c1onikK4MERB5Sz3mvHwokmP";
+const myProgramId = "Bs6wAQAyxVgj9mDFKo8ZBVxdbC8qugQ3FgWSqnBCS858";
 import IDL from "../utils/idl.json" assert { type: 'json' };
 import BN from 'bn.js';
 const programId = new PublicKey(myProgramId);
@@ -19,7 +19,7 @@ export class GamePassSDK {
     constructor(keypair) {
         this.provider = getProvider(keypair);
         this.GameOwnerkeypair = keypair;
-        this.gamePassAccount = new PublicKey('HxXJeZzHM8hyimqqzoho7bpYoXzPd6sPoqBSfsFUQ93e');
+        this.gamePassAccount = new PublicKey('3UTWCtNK5z4a66rNtVwVfEoT6966uajrpURBSZ41mypB');
         this.program = new anchor.Program(IDL, programId, this.provider);
     }
     initializeGame(gameName, gameAvatar) {
@@ -654,3 +654,12 @@ export class GamePassSDK {
         });
     }
 }
+/*
+git add .
+git commit -m "Updated README and bumped version to 1.1.0"
+git tag v1.1.0
+git push origin v1.1.0
+npm login
+npm publish
+  
+*/ 
