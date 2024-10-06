@@ -40,9 +40,9 @@ export class GamePassSDK {
     this.gamePassAccount = new PublicKey('4KFekCRFRM4GcpnbobfA88Zr1CLYBsVGghNWzQq8B3Qf');
     this.program = new anchor.Program(IDL as Idl, programId, this.provider);
   }
-
+  
   async initializeGame(gameName: string , gameAvatar: string): Promise<InitializeGameResult> {
-
+  
     try {
     
       if(!this.GameOwnerkeypair)  throw new Error('You need to initial the SDK with your keypair');
